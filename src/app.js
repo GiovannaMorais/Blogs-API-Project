@@ -13,6 +13,7 @@ app.get('/user', validateToken, usersController.getUsers);
 app.get('/user/:id', validateToken, usersController.getUsersById);
 app.post('/login', loginController.signIn);
 app.post('/categories', validateToken, categoriesController.createCategory);
+app.get('/categories', validateToken, categoriesController.getCategories);
 
 // ...
 
