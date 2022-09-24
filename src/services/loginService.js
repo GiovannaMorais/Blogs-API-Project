@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const { validateEmail, validatePassword } = require('../schemas/validations');
+const { validateEmail, validatePassword } = require('../middlewares/validationsLogin');
 const { User } = require('../models');
 
 const TOKEN_SECRET_KEY = process.env.JWT_SECRET || 'suaSenhaSecreta';
