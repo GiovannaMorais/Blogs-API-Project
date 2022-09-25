@@ -64,9 +64,24 @@ const getPostsById = async () => {
   return post;
 };
 
+const updatePost = async (id, title, content) => {
+  if (!title || !content) {
+    return { message: 'Some required fields are missing', code: 400 };
+  }
+
+  await BlogPost.update(   
+        { title, content },
+        { where: { id } },
+  );
+
+  const blogPostUpdated = await getPostsById();
+  return blogPostUpdated;
+};
+
 module.exports = {
   createPost,
   getPosts,
   getPostsById,
-
+  updatePost,
+  
 };
