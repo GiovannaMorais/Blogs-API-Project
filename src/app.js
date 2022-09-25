@@ -22,6 +22,7 @@ app.get('/categories', validateToken, categoriesController.getCategories);
 
 app.get('/post', validateToken, postsController.getPosts);
 app.post('/post', validateToken, postsController.createPost);
+app.get('/post/search', validateToken, postsController.searchItem);
 app.get('/post/:id', validateToken, postsController.getPostsById);
 app.put('/post/:id', validateToken, auth, postsController.updatePost);
 app.delete('/post/:id', validateToken, auth, postsController.deletePost);
