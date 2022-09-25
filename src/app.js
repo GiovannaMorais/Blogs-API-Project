@@ -8,7 +8,6 @@ const postsController = require('./controllers/posts.controller');
 const app = express();
 
 app.use(express.json());
-
 app.post('/user', usersController.createUser);
 app.get('/user', validateToken, usersController.getUsers);
 app.get('/user/:id', validateToken, usersController.getUsersById);
@@ -19,6 +18,7 @@ app.post('/login', loginController.signIn);
 app.post('/categories', validateToken, categoriesController.createCategory);
 app.get('/categories', validateToken, categoriesController.getCategories);
 
+app.post('/post', validateToken, postsController.createPost);
 app.get('/post', validateToken, postsController.getPosts);
 app.get('/post/:id', validateToken, postsController.getPostsById);
 

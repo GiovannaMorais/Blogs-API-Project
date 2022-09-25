@@ -27,8 +27,6 @@ const getUsersById = async (req, res) => {
 const deleteUser = async (req, res) => {
     const { id } = req.user;
 
-    // console.log(id);
-
     await usersService.deleteUser(id);
 
     return res.status(204).json();
