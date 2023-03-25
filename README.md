@@ -21,7 +21,7 @@ Para começar com este projeto, clone o repositório e instale suas dependência
 
 O projeto pode ser executado de duas formas: com Docker ou sem Docker.
 
-##🔸 Com Docker
+## 🔸 Com Docker
 - Certifique-se de ter o docker-compose instalado na versão 1.29 ou superior. Em seguida, rode os serviços node e db com o comando:
 
 ```bash
