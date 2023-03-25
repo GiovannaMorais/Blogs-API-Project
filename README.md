@@ -6,7 +6,7 @@ Este projeto é uma API construída em Node.js com o pacote Sequelize para inter
 
 
 
-## Instalação
+## ⚠️ Instalação
 
 Para começar com este projeto, clone o repositório e instale suas dependências:
 
@@ -16,12 +16,12 @@ Para começar com este projeto, clone o repositório e instale suas dependência
   npm install
 ```
     
-## Executando a Aplicação
+## 🎲 Executando a Aplicação
 
 
 O projeto pode ser executado de duas formas: com Docker ou sem Docker.
 
-### Com Docker
+### 🔸 Com Docker
 - Certifique-se de ter o docker-compose instalado na versão 1.29 ou superior. Em seguida, rode os serviços node e db com o comando:
 
 ```bash
@@ -41,9 +41,9 @@ docker exec -it blogs_api bash
 - Instale as dependências (caso existam) com npm install. Lembre-se de não rodar o comando npm audit fix, pois isso pode gerar conflitos com o avaliador.
 
 
-### Sem Docker
+### 🔸 Sem Docker
 - Para executar o projeto sem Docker, é necessário ter o Node instalado em sua máquina (a versão 16).Em seguida, instale as dependências (caso existam) com npm install. Lembre-se de não rodar o comando npm audit fix, pois isso pode gerar conflitos com o avaliador.
-## Endpoints
+## 📍Endpoints
 
 Os seguintes endpoints estão disponíveis na API:
 
@@ -108,7 +108,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Express](https://expressjs.com/pt-br/)
 - [jsonwebtoken - JWT](https://www.npmjs.com/package/jsonwebtoken)
 - [Sequelize](https://sequelize.org/)
-## Conclusão
+## 😊 Conclusão
 
 Este projeto forneceu um ponto de partida para a construção de uma API para gerenciar o conteúdo do blog. Você pode continuar a construir sobre este projeto e personalizá-lo para atender às suas necessidades específicas.
 
