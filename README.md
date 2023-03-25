@@ -43,6 +43,7 @@ docker exec -it blogs_api bash
 
 ### 🔸 Sem Docker
 - Para executar o projeto sem Docker, é necessário ter o Node instalado em sua máquina (a versão 16).Em seguida, instale as dependências (caso existam) com npm install. Lembre-se de não rodar o comando npm audit fix, pois isso pode gerar conflitos com o avaliador.
+
 ## 📍Endpoints
 
 Os seguintes endpoints estão disponíveis na API:
